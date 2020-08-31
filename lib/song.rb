@@ -51,8 +51,6 @@ class Song
     song
   end
 
-  binding.pry
-
   def self.create_from_filename(filename)
     formatted_filename = filename.chomp(".mp3").split{" - "}
     song = self.new
